@@ -1,0 +1,27 @@
+header {
+    background-color: rgb(182, 163, 115);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    font-size: 1.5em;
+}
+
+.search {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #222;
+    outline: none;
+}
+.search:focus {
+    border-bottom-color: #ffffff;
+}
+.menu {
+    display: flex;
+    gap: 1em;
+}
+
+.UserL{
+    height: 40px;
+    width: 40px;
+}

@@ -1,0 +1,11 @@
+.promo {
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction:row;
+}
+
+.promo img {
+    width: 20%;
+}
