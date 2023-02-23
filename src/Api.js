@@ -49,6 +49,17 @@ class Api {
             }
         })
     }
+
+    // Данные о пользователе
+    getUsers() {
+        return fetch(`${this.path}/v2/${this.group}/users`, {
+            headers: {
+                "authorization": `Bearer ${this.token}`
+            }
+        })
+    }
+
+
     deletePost(id) {
         return fetch(`${this.path}/posts/${id}`, {
             method: "delete",

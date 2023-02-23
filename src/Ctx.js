@@ -10,6 +10,7 @@ export default React.createContext({
     modalActive: false,
     setModalActive: () => {},
     posts: [],
+    favorites: [],
     setPosts: () => {},
     visiblePosts: [],
     setVisiblePosts: () => {},

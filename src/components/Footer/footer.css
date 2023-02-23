@@ -1,9 +1,11 @@
 footer {
-    background-color:rgb(129, 133, 136);
+    background-image:url(../../assets/img/fon_footer.png);
     color: #000000;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 0.6px;
+    
 
 }
 .footer__copy {

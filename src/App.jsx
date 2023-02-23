@@ -32,6 +32,7 @@ const App = () => {
     const [posts, setPosts] = useState([]);
     const [visiblePosts, setVisiblePosts] = useState(posts);
     const [favorites, setFavorites] = useState([]);
+    const [authors, setAuthors] = useState([]);
 
     useEffect(() => {
         if (token) {
@@ -39,6 +40,11 @@ const App = () => {
                 .then(res => res.json())
                 .then(data => {
                     setPosts(data.filter(d => d.tags.includes("travelblog23")));
+                })
+                api.getUsers()
+                .then(res => res.json())
+                .then(data => {
+                    setAuthors(data);
                 })
         }
     }, []) 
@@ -93,6 +99,7 @@ const App = () => {
             setVisiblePosts: setVisiblePosts,
             setFavorites: setFavorites,
             PATH: PATH,
+            authors
         }}>
             <div className="wrapper">
                 <Header/>

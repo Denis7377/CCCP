@@ -7,9 +7,10 @@
     position: relative;
     gap: 1em;
     justify-items: center;
-    align-items: flex-start;
+    align-items: center;
     height: 100%;
     text-align: center;
+    background-image:url(../../assets/img/fon_main.png);
 }
 .card__heart {
     position: absolute;
@@ -19,4 +20,11 @@
 }
 .card>.btn {
     width: max-content;
+}
+
+.promo_img{
+    width: 80%;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #1b1818;
 }

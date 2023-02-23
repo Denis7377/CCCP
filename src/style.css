@@ -1,12 +1,28 @@
 body {
     margin: 0;
-    font-family: sans-serif;
-    color:rgb(66, 62, 8);
+    font-family: 'Fredoka One', cursive;
+    color:rgb(34, 33, 26);
+    /* background-image: url(./assets/img/fon_body.jpg); */
+}
+
+main{
+    background-image:url(./assets/img/fon_main.png);
 }
 a {
     text-decoration: none;
     color: inherit;
 }
+
+.title-text{
+    padding-left: 50px;
+}
+
+.link {
+    padding-left: 50px;
+    font-size: 20px;
+}
+
+
 a:hover {
     color: inherit;
 }
@@ -14,15 +30,19 @@ a:hover {
     min-height: 100vh;
     display: grid;
     grid-template-rows: 100px auto 50px;
+    padding: 20px calc(50% - 600px);
+    
 }
-.wrapper>* {
-    padding: 0 calc(50% - 800px);
-}
+/* .wrapper>* {
+    padding: 0 calc(50% - 600px);
+    
+} */
 .cards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2em;
     align-items: stretch;
+    background-image:url(./assets/img/fon_main.png);
 }
 @media (max-width: 1260px) {
     .wrapper>* {

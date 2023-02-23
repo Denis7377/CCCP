@@ -39,9 +39,8 @@ function Card ({name, image, likes, title, text, _id}) {
 
 
     return <div className="card">
-        <img src={image} alt={name} style={{height: "100px"}}/>
+        <img className="promo_img" src={image} alt={name} style={{height: "250px"}}/>
         {title}
-        <p>{text}</p>
         <span className="card__heart" onClick={update}>
             {
                 like 

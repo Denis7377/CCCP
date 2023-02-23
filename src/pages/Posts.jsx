@@ -9,8 +9,10 @@ import Pagination from "../components/Pagination";
 function Posts ({data})  {
     const {visiblePosts, user, PATH} = useContext(Ctx);
     const [sortPosts, setSortPosts] = useState(visiblePosts);
-    const paginate = usePagination(sortPosts, 12);
+    const paginate = usePagination(visiblePosts, 12);
     const [btnType, setBtnType] = useState("");
+    
+    
     let st = {
         display: "flex",
         gap: "10px"

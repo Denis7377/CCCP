@@ -10,13 +10,13 @@
     height: 30px;
     box-sizing: border-box;
     padding: 6px 12px;
-    border-radius: 10px;
-    border: 1px solid silver;
+    border-radius: 0px;
+    border: 2px solid rgb(0, 0, 0);
     font-size: 16px;
     outline: none;
 }
 .search-block>input:focus {
-    border-color: rgb(243, 231, 5);
+    border-color: rgb(43, 42, 32);
 }
 .search-block>button {
     position: absolute;
@@ -30,7 +30,7 @@
 }
 .search-block svg {
     height: 100%;
-    fill: silver;
+    fill: rgb(0, 0, 0);
     cursor: pointer;
 }
 .search-block svg:hover {
