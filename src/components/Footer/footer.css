@@ -1,10 +1,10 @@
 footer {
-    background-image:url(../../assets/img/fon_footer.png);
+    background-image:url(../../assets/img/fon_header.png);
     color: #000000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 0.6px;
+    padding: 35px;
     
 
 }

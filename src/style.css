@@ -39,10 +39,11 @@ a:hover {
 } */
 .cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2em;
     align-items: stretch;
     background-image:url(./assets/img/fon_main.png);
+    padding: 20px;
 }
 @media (max-width: 1260px) {
     .wrapper>* {

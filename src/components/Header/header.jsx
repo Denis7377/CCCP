@@ -17,7 +17,7 @@ function Header ()  {
     }
   
     return <header>
-        <Link className="logo" to={PATH}> <img src={logo} alt="" /></Link>
+        <Link className="logo" to={PATH}> <img className="logo_img" src={logo} alt="" /></Link>
         <Search/>
         <nav className="menu">
             {user && <Link to={PATH + "add"}><PlusCircle style={{fontSize: "20px"}}/></Link>}

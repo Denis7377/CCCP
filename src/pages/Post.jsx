@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useContext } from "react";
 import {useParams, Link, useNavigate, Navigate} from "react-router-dom";
 import {Trash3} from "react-bootstrap-icons";
-import Comments from "../components/Comments/Comments";
+import Reviews from "../components/Reviews/Reviews";
 import Ctx from "../Ctx";
+import "./Post.css";
 
 export default function Post ({}) {
     const {id} = useParams();
@@ -18,7 +19,7 @@ export default function Post ({}) {
     }, []);
     const btnSt = {
         position: "absolute",
-        right: "20px",
+        right: "400px",
         top: "120px",
         cursor: "pointer",
         height: "auto"
@@ -35,7 +36,7 @@ export default function Post ({}) {
             })
     }
     return <>
-    <Link to={PATH + "posts"}>Назад</Link>
+        <Link className="text_post" to={PATH + "posts"}><b>Назад</b></Link>
         {message && message.author && message.author._id === user._id && <button 
             onClick={remove} 
             className="btn" 
@@ -43,16 +44,16 @@ export default function Post ({}) {
         >
             <Trash3/>
         </button>}
-        <h1>{message.title || "Страница товара"}</h1>
+        <h1 className="title_post">{message.title || "Страница товара"}</h1>
         {/* <p>Автор: {message.author.name}</p> */}
-        <img
+        <img className="img_post"
             src={message.image}
             alt="message"
         />
-        <p>{message.text}</p>
-        <h2>Комментарии</h2>
-        <div className="reviews">
-            {message.comments && message.comments.length > 0 && message.comments.map((el, i) => <Comments {...el} key={i}/>)}
+        <p className="text_post">{message.text}</p>
+        <h2 className="text_post" >Комментарии</h2>
+        <div className="text_post , reviews">
+            {message.comments && message.comments.length > 0 && message.comments.map((el, i) => <Reviews  {...el} key={i}/>)}
         </div>
     </>
 }

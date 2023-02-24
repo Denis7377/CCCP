@@ -57,8 +57,9 @@ function Posts ({data})  {
         {user && <>
             {visiblePosts.length > 0 
                 ? <>
-                    <h1>Все посты</h1>
-                    <div style={st}>
+                <Link to={PATH} className="btn, text_post"><b>На главную</b></Link>
+                    <h1 className="text_post">Все посты</h1>
+                    <div className="text_post" style={st}>
                         <button className={`btn ${btnType === "up" ? "sort" : ""}`} title="up" onClick={updSort}><SortNumericUp/> А-Я</button>
                         <button className={`btn ${btnType === "down" ? "sort" : ""}`} title="down" onClick={updSort}><SortNumericDown/> Я-А </button>
                         <button className={`btn ${btnType === "new" ? "sort" : ""}`} title="new" onClick={updSort}>Новинки</button>

@@ -14,18 +14,26 @@ export default ({change, close}) => {
             password: inp2
         }
         api.signIn(body)
-            .then(res => res.json())
-            .then(data => {
-                // Не забыть отловить сообщение с ошибкой
-                console.log(data);
-                localStorage.setItem("user8", JSON.stringify(data.data));
-                localStorage.setItem("token8", data.token);
-                setToken(data.token);
+        .then(res => res.json())
+        .then(data => {
+            if (!data.err) {
+                api.signIn(body)
+                    .then(res => res.json())
+                    .then(data => {
+                        localStorage.setItem("user8", JSON.stringify(data.data));
+                        localStorage.setItem("token8", data.token);
+                        setToken(data.token);
+                    })
                 setInp1("");
                 setInp2("");
-                close(false)
-            })
-    }
+                close(false);
+            } else {
+                alert(data.message);
+                // Отобразить уведомление с ошибкой
+            }
+        })
+        }
+        
 
     return <form onSubmit={sendForm}>
         <input 

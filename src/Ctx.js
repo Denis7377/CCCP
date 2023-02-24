@@ -16,6 +16,4 @@ export default React.createContext({
     setVisiblePosts: () => {},
     favorites: [],
     setFavorites: () => {},
-    basket: [],
-    setBasket: () => {}
 });
