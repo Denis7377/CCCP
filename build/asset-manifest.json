@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "./static/css/main.da4121cd.css",
+    "main.js": "./static/js/main.916854de.js",
+    "static/media/fon_main.png": "./static/media/fon_main.27d26ca5d380b598d34a.png",
+    "static/media/a6.jpg": "./static/media/a6.008b672c60e8cbafcdd9.jpg",
+    "static/media/a7.jpg": "./static/media/a7.23c289dcfa0936ff23ed.jpg",
+    "static/media/a2.jpeg": "./static/media/a2.934d38235ba63c0e2506.jpeg",
+    "static/media/a1.jpg": "./static/media/a1.98778d03f752e4c7b244.jpg",
+    "static/media/a4.jpg": "./static/media/a4.53d290913135448530e7.jpg",
+    "static/media/a5.jpg": "./static/media/a5.b79ede28d23e801bf4a2.jpg",
+    "static/media/a3.jpg": "./static/media/a3.62c687ca76aa1f8cc4f2.jpg",
+    "static/media/lenin.png": "./static/media/lenin.8a0c605adceac85fc09a.png",
+    "static/media/a9.jpg": "./static/media/a9.889c361829ef238b8f6a.jpg",
+    "static/media/fon_header.png": "./static/media/fon_header.d82a90c550284250d473.png",
+    "static/media/a8.jpg": "./static/media/a8.5be77afc7c6af78e85dd.jpg",
+    "static/media/a10.jpg": "./static/media/a10.d990ab95e729a206771e.jpg",
+    "static/media/header-logo.png": "./static/media/header-logo.7fa9692bcdf1956ad48a.png",
+    "index.html": "./index.html",
+    "static/media/circle-xmark-regular.svg": "./static/media/circle-xmark-regular.8ef6e0a127f37e5c70a1e4bb4cb92f32.svg",
+    "static/media/magnifying-glass-solid.svg": "./static/media/magnifying-glass-solid.06e310dbfbf3ab21da478aef6c037c14.svg",
+    "main.da4121cd.css.map": "./static/css/main.da4121cd.css.map",
+    "main.916854de.js.map": "./static/js/main.916854de.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.da4121cd.css",
+    "static/js/main.916854de.js"
+  ]
+}
